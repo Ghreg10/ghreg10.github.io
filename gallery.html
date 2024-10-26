@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-image: url('pictures/background1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: #fff;
+        }
+
+        h1 {
+            text-align: center;
+            color: #fff;
+        }
+
+        table {
+            width: 50%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: hsl(210, 17%, 98%);
+        }
+
+        td {
+            border: 1px solid #d504f5;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .btn-back, .btn {
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #9104f5;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .btn-back:hover, .btn:hover {
+            background-color: hsl(210, 12%, 97%);
+            color: #9104f5;
+        }
+
+        .btn-back {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+        }
+
+        .buttons {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+        }
+
+        .buttons .btn {
+            margin-left: 10px;
+        }
+
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .image-gallery img {
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" class="btn-back" onclick="goBack()">Back</a>
+
+    <div class="buttons">
+        <a href="profile.html" class="btn">Profile</a>
+        <a href="projects.html" class="btn">Projects</a>
+        <a href="referrals.html" class="btn">Referrals</a>
+        <a href="gallery.html" class="btn">Gallery</a>
+    </div>
+
+    <h1>Gallery</h1>
+
+    <div class="image-gallery">
+        <img src="pictures/pic1.jpg" alt="Picture 1">
+        <img src="pictures/pic2.jpg" alt="Picture 2">
+        <img src="pictures/pic3.jpg" alt="Picture 3">
+        <img src="pictures/pic4.jpg" alt="Picture 4">
+        <img src="pictures/pic5.jpg" alt="Picture 5">
+        <img src="pictures/pic6.jpg" alt="Picture 6">
+        <img src="pictures/pic7.jpg" alt="Picture 6">
+        <img src="pictures/pic8.jpg" alt="Picture 6">
+        <img src="pictures/pic9.jpg" alt="Picture 6">
+        <img src="pictures/pic10.jpg" alt="Picture 6">
+        <img src="pictures/pic11.jpg" alt="Picture 6">
+        <img src="pictures/pic12.jpg" alt="Picture 6">
+        <img src="pictures/pic13.jpg" alt="Picture 6">
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
